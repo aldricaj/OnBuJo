@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import {Helmet} from 'react-helmet'
-import { BulletService } from './services/bullet.service'
-import { PageComponent } from './components/page.component'
-import { Page } from './models/Page'
+import { CollectionComponent } from './components/collection/collection.component'
+import { Collection } from './models/Collection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,9 +13,10 @@ function App() {
       </Helmet>
       <header className="App-header"> 
         <h1>OnBuJo</h1>
-        <h2>Collection Name</h2>
-        <PageComponent page={new Page(1, "My Page","")}/>
       </header>
+      
+      <CollectionComponent collection={new Collection("d8157cd8-5c8e-4ae0-a24d-d131740aeb37", "My Collection")}/>
+      
     </div>
   )
 }

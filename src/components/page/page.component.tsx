@@ -1,9 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { Bullet } from "../models/Bullet";
-import { Page } from "../models/Page";
-import { BulletService } from "../services/bullet.service";
-import { BulletComponent } from "./bullet.component";
+import { Bullet } from "../../models/Bullet";
+import { Page } from "../../models/Page";
+import { BulletService } from "../../services/bullet.service";
+import { BulletComponent } from "../bullet/bullet.component";
 import "./page.css"
 
 class PageComponentProps {

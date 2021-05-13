@@ -1,0 +1,12 @@
+.bullet {
+    list-style: none;
+    /* width: 100%; */
+    justify-self: center;
+    padding: .5% 3%;
+    background-color: #181c24;
+    /* box-shadow: 2px 2px 2px 1px #000000; */
+    /* border: 1px solid #111111; */
+    margin-bottom: 10%;
+    max-width: 75%;
+    margin: auto 0 2%;
+}
