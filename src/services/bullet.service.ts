@@ -10,7 +10,7 @@ export class BulletService extends Service {
 
     async GetAllBullets(): Promise<Array<Bullet>> {
         let supabase = createClient(SUPABASE_API_URL, SUPABASE_API_KEY);
-        let {data:bulletList, error} = await supabase.from('Bullet').select('*');
+        let {data:bulletList, error} = await supabase.from('fullbullet').select('*');
         if (error){
             let result = this.handleError(error);
             if (result) throw result;

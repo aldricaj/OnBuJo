@@ -23,7 +23,7 @@ export class BulletComponent extends Component<BulletComponentProps, BulletCompo
 
     render() {
         return <li className="bullet">
-                <p>{this.bullet.bulletText}</p>
+                <p><span className="bullet-symbol">{this.bullet.defaultSymbol}</span>{this.bullet.bulletText}</p>
             </li>
             
     }
